@@ -54,14 +54,27 @@ export default function FinancialDashboard() {
 
   return (
     <div className="w-full p-8">
-      <motion.h1 
-        className="text-4xl font-bold mb-8 text-[#4A6670]"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        Financial Health Tracker
-      </motion.h1>
+      <div className='flex w-full gap justify-between	'>
+        <div>
+          <motion.h2 
+            className="text-2xl mb-8 text-[#4A6670]"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Hello Joe! 
+          </motion.h2>
+          <motion.h1 
+            className="text-4xl font-bold mb-8 text-[#4A6670]"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Financial Health Tracker
+          </motion.h1>
+        </div>
+        <motion.div>Generated on 03.11.2023</motion.div>
+    </div>
       
       <Highlights />
 
