@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     const data = await response.json();
     return NextResponse.json(data);
-  } catch (error) {
+  } catch  {
     return NextResponse.json({ error: "Failed to fetch data from OpenAI" }, { status: 500 });
   }
 }
